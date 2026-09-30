@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #dff7ff;
+    color: #241638;
+    font-family: Arial, sans-serif;
+}
+
+/* ALL SECTIONS */
+
+header,
+section {
+    min-height: 100vh;
+    padding: 60px;
+    border-bottom: 2px solid #241638;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+/* TOP */
+
+header {
+    text-align: center;
+}
+
+header p,
+.number,
+.instruction,
+.scroll {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 70px 0 30px;
+    white-space: nowrap;
+}
+
+.intro-text {
+    font-size: 20px;
+}
+
+.hero {
+    width: 220px;
+    margin: 50px;
+}
+
+.scroll {
+    margin-top: 20px;
+}
+
+/* INGREDIENTS */
+
+.ingredients {
+    background: #FF72A8;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 40px 0;
+}
+
+.ingredients ul {
+    max-width: 550px;
+    padding-left: 25px;
+}
+
+.ingredients li {
+    font-size: 23px;
+    padding: 12px 0;
+    border-bottom: 2px solid #241638;
+}
+
+/* INTERACTIVE STEPS */
+
+.step {
+    text-align: center;
+}
+
+.step .number {
+    text-align: left;
+}
+
+.instruction {
+    margin: 30px 0;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+label img {
+    width: 220px;
+    transition: 0.3s;
+}
+
+label:hover img {
+    transform: scale(1.08);
+}
+
+.success {
+    display: none;
+    color: #E93672;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* CLICKING THE GRAPHIC */
+
+input:checked ~ .success {
+    display: block;
+}
+
+input:checked + label img {
+    transform: scale(0.9) rotate(-8deg);
+}
+
+/* METHOD */
+
+.method {
+    background: #D9C7FF;
+}
+
+.method ol {
+    max-width: 600px;
+    padding-left: 40px;
+}
+
+.method li {
+    font-size: 25px;
+    padding: 15px 0;
+    border-bottom: 2px solid #241638;
+}
+
+/* FINAL */
+
+.final {
+    text-align: center;
+    background: #FF72A8;
+}
+
+.final img {
+    width: 260px;
+}
+
+.checks {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-weight: bold;
+}
+
+.final h3 {
+    font-size: 40px;
+}
+
+/* BOTTOM */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
